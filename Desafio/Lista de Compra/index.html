@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="icon" href="./assets/logo.svg">
+  <link rel="stylesheet" href="./style.css">
+  <title>Lista de Compra</title>
+</head>
+<body>
+  <main>
+    <header >
+      <img src="./assets/logo.svg" alt="" id="brand">
+      <p>quicklist</p>
+    </header>
+    <nav id="back">
+      <img src="./assets/arrow.svg" alt="" id="arrow">
+      <span>Voltar</span>
+    </nav>
+    <h1 id="title">Compra da Semana</h1>
+
+    <form>
+      <input type="text" placeholder="Adicione um novo item" id="new">
+      <button type="submit" id="btn">Adicionar item</button>
+    </form>
+
+    <ul>
+      
+    </ul>
+
+    <div id="message" class="hide">
+      <img src="./assets/atention.svg" alt="atenção" id="atention">
+      <span>item foi removido da lista </span>   
+      <img src="./assets/close.svg" alt="Fechar" id="closer">
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
