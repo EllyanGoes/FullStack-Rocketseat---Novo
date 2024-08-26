@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Raffle maker</title>
+  </head>
+  <body>
+    <div id="logo">
+      <img src="./assets/Clip path group.svg" alt="" />
+      <span>NUMBERS</span>
+    </div>
+
+    <div id="app">
+      <div id="title">
+        <p>Online - gratuito</p>
+        <h1>Sorteador de números</h1>
+      </div>
+
+      <div id="about">
+        <div class="help">
+          <img src="./assets/person.svg" alt="" />
+          <div>
+            <h2>Como funciona o sorteador de números?</h2>
+            <p>
+              O sorteador utiliza um algoritmo de geração aleatória para criar
+              números dentro do intervalo especificado pelo usuário.
+            </p>
+          </div>
+        </div>
+
+        <div class="help">
+          <img src="./assets/person.svg" alt="" />
+          <div>
+            <h2>Posso escolher o intervalo dos números?</h2>
+            <p>
+              Sim, você pode definir os valores mínimo e máximo para o intervalo
+              dos números sorteados.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <form id="instructions">
+        <div id="luck" class="">
+          <h2>Quero sortear:</h2>
+          <p>
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e
+            veja os resultados na tela. É rápido e fácil!
+          </p>
+        </div>
+
+        <div id="results" class="hide">
+          <h2>Resultado do sorteio</h2>
+          <p>1º resultado</p>
+        </div>
+
+        <div id="container" class="hide container">
+          <div class="numbers-results">24</div>
+          <div class="numbers-results">12</div>
+        </div>
+
+        <fieldset class="">
+          <div id="field">
+            <div class="numbers">
+              <label for="many">Número</label>
+              <input id="many" type="number" />
+            </div>
+
+            <div class="numbers">
+              <label for="start">De</label>
+              <input id="start" type="number" />
+            </div>
+
+            <div class="numbers">
+              <label for="end">De</label>
+              <input id="end" type="number" />
+            </div>
+          </div>
+
+          <label class="toggle">
+            <input type="checkbox" id="toggleSwitch" />
+            <span class="slider"></span>
+            <span class="label-text">Não repetir número</span>
+          </label>
+        </fieldset>
+
+        <button>
+          <p class="">Sortear</p>
+          <img class="" src="./assets/arrow.svg" alt="" />
+        </button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
