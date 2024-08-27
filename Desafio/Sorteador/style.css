@@ -360,24 +360,21 @@ input:checked + .slider:before {
 }
 
 .numbers-results {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-
   width: 8.4rem;
   height: 8.4rem;
   border-radius: 2.8rem;
 
-  background-color: transparent;
-
-  color: #c58de7;
   font-family: "Roboto Mono";
   font-size: 4.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 72px */
   text-transform: uppercase;
+
+  background-color: transparent;
+  color: #c58de7;
+  border-radius: 2.8rem;
+  opacity: 0;
 }
 
 @media (max-width: 400px) {
@@ -430,4 +427,76 @@ input:checked + .slider:before {
 
 .hide {
   display: none;
+}
+
+.result-container {
+  position: relative;
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  height: 100px; /* Ajuste o tamanho conforme necessário */
+  margin: 10px;
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.5s ease; /* Efeito de transição para a opacidade */
+  display: flex; /* Para usar flexbox */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* Começa transparente */
+  border-radius: 2.8rem;
+  transition: background-color 1s ease; /* Transição para a cor de fundo */
+}
+
+.numbers-results {
+  position: relative;
+  z-index: 1; /* Coloca o número acima do fundo */
+  color: #c58de7; /* Cor inicial do texto */
+  font-size: 4.8rem; /* Tamanho da fonte do número */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Classe para mostrar a div */
+.show {
+  opacity: 1; /* Torna visível */
+}
+
+/* Animação de rotação */
+.rotate-center {
+  animation: rotate-center 2s forwards; /* Duração da animação de rotação */
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+    background-color: transparent; /* Transparente no início */
+  }
+  50% {
+    background-color: #c58de7; /* Cor de fundo na metade da animação */
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: transparent; /* Mantém a cor de fundo no final */
+  }
+}
+
+/* Classe para mudar a cor do texto após a animação */
+.numbers-results.show {
+  color: #020202; /* Mudou a cor do texto durante a animação */
+}
+
+.result-container.show .background {
+  background-color: #c58de7; /* Muda para a cor de fundo desejada */
+}
+
+/* Classe para mudar a cor do texto após a animação */
+.numbers-results.final-color {
+  color: #c58de7; /* Cor do texto final */
 }
