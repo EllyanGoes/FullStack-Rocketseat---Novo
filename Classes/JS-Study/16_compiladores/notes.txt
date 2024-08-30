@@ -1,0 +1,32 @@
+O package.json vai anotando as dependências de pacote que vamos adicionando ao projeto 
+
+devdependecies -> dependências que usamos somente em desenvolvimento 
+dependencies - > dependências que usamos em ambiente de produção 
+
+#1 configurar o babel 
+
+babel.config.json
+// Garante que os navegadores antigos suportem as novas versões
+const presets = ["@babel/preset-env"];
+
+// Exportar as configurações
+module.exports = { presets };
+
+#2 executando o babel pelo terminal 
+./node_modules?.bin/babel main.js --out-dir dist 
+
+#3 Criando um script para compilar
+o script vai ficar no package.json
+npm run (script)
+
+#4 utilizando o arquivo compilado 
+so direcionar ele no arquivo index.html na tag script e apontar para a próxima
+
+#5 compilando de forma automática 
+no package.json
+"build":"babel main.js --watch --out-dir ./dist"
+
+#6 configurando targets 
+  dentro da @babel/preset-env
+  no package.json -> consegue direcionamento dos targets pelos documentos 
+
