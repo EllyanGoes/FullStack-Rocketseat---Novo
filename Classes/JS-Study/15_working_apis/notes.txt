@@ -1,0 +1,4 @@
+#instalando versão especifica de pacote 
+npm install json-server@(versão)
+
+Método get apenas ler e recebe informações 

@@ -1,0 +1,4 @@
+Quando uma função assíncrona é chamada, ela retorna um Promise
+Quando a função assíncrona retorna um valor, a Promise será resolvida com o valor retornando
+Quando a função assíncrona lança uma exceção ou algum valor, a Promise será rejeitada com o valor lançado
+Await, pausa a execução da função para aguardar o retorno 
