@@ -1,0 +1,39 @@
+#1 baixando o webpack 
+npm install webpack webpack-cli --save-dev
+
+#2 script packsage.json
+  "scripts": {
+    "build":"webpack ./src/js/index.js"
+  },
+
+#3 configurando o webpack
+
+#4 incluindo o html no pacote 
+baixa o plugin do html nas documentações do webpack 
+configurações do webpack
+adiciona -> const HtmlWebpackPlugin = require("html-webpack-plugin");
+adiciona ->  plugins: [new HtmlWebpackPlugin()],
+
+#5 como incluir o css no empacotamento 
+no webpack 
+instalar o styleloader e o css loader e configurar de acordo com o site a baixo 
+https://webpack.js.org/loaders/style-loader/#root
+module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+        exclude: "/node_modules",
+      },
+    ],
+  },
+
+#6 incluir o babel-loader
+baixa e
+ler documentação para configura 
+
+#7 incluir webpack dev server API 
+baixa 
+ler documentação para configurar 
+
+
