@@ -1,0 +1,8 @@
+Functions 
+
+1# O usuário pode adicionar um novo agendamento;
+2# O usuário pode editar um agendamento;
+3# O usuário pode visualizar um agendamento;
+4# O usuário pode visualizar os agendamentos separados por período;
+5# O usuário pode excluir um agendamento;
+6# O usuário pode filtrar os agendamentos por data.

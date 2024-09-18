@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Inter Tight", system-ui;
+  font-size: 16px;
+}
+
+body {
+  background-color: #14151d;
+  color: white;
+
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+/* .schedule-container {
+} */
+
+#logo {
+  display: inline-flex;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 0px 0px 12px 0px;
+  background: #2e2c30;
+
+  color: #9282fa;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#logo h1 {
+  font-family: "Familjen Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-flex;
+  height: 48px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 8px;
+  background: #9282fa;
+  box-shadow: 0px 0px 40px 0px rgba(146, 130, 250, 0.3);
+
+  color: #050505;
+
+  font-family: "Inter Tight";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+
+  position: absolute;
+  bottom: 33px;
+  right: 30px;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+.hide {
+  display: none;
+}
