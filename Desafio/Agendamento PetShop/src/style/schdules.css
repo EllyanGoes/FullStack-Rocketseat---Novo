@@ -104,5 +104,47 @@ input[type="date"] {
 .period > li {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-family: Inter;
+
+  line-height: 16px;
+  font-size: 12px;
+
+  gap: 16px;
+
+  margin: 0 12px;
+  height: 48px;
+}
+
+.period > li strong {
+  line-height: 24px;
+  font-size: 14px;
+  width: 45px;
+}
+
+.pet-name {
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.period > li div,
+.service {
+  flex-grow: 1;
+}
+
+.owner-name,
+.service {
+  color: #98959d;
+  font-weight: 400;
+}
+
+.remove {
+  background-color: transparent;
+  border: none;
+  color: #666;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
 }
