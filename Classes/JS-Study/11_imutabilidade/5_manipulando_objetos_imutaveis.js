@@ -5,22 +5,22 @@ const book = {
     name: "Rodrigo",
     email: "rodrigo@gmail.com",
   },
-};
+}
 
 const updateBook = {
   ...book,
   title: "criando um Front-End moderno com HTML",
   category: "html",
-  type: "Programção",
-};
+  type: "Programação",
+}
 
 //Original Intacto
-console.log(book);
+console.log(book)
 
 //Modificado
-console.log(updateBook);
+console.log(updateBook)
 
-//Utilizando operador de desestruturação (rest operator) para remover propiedades
+//Utilizando operador de desestruturação (rest operator) para remover propriedades
 
-const { category, ...bookWithOutCategory } = book;
-console.log(bookWithOutCategory);
+const { category, ...bookWithOutCategory } = book
+console.log(bookWithOutCategory)

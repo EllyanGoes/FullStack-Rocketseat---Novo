@@ -1,11 +1,10 @@
-//DO WHILE: repete até que a condição específica seja verdadeira. No entanto a condição será execeutada pelo menos uma vez antes da condição ser verificada 
+//DO WHILE: repete até que a condição específica seja verdadeira. No entanto a condição será execeutada pelo menos uma vez antes da condição ser verificada
 
-let value = 11 
+let value = 1
 
-do{
+do {
   value++
   console.log(value)
+} while (value > 10)
 
-}while(value < 10)
-
-  console.log('Do While executado')
+console.log("Do While executado")

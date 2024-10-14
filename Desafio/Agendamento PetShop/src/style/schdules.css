@@ -3,7 +3,7 @@
 }
 
 .schedule {
-  width: 71.1rem;
+  min-width: 71.1rem;
 }
 
 .schedule > header:first-of-type {
@@ -141,6 +141,10 @@ input[type="date"] {
   line-height: 1.6rem;
 }
 
+.period > li div {
+  max-width: 19.7rem;
+}
+
 .period > li div,
 .service {
   flex-grow: 1;
@@ -162,7 +166,7 @@ input[type="date"] {
   cursor: pointer;
 }
 
-@media (max-width: 881px) {
+@media (max-width: 871px) {
   .schedule-container {
     padding: 2rem;
   }
@@ -175,7 +179,7 @@ input[type="date"] {
   }
 
   .schedule {
-    width: 35rem;
+    min-width: 35rem;
     margin-bottom: 4.4rem;
   }
 
